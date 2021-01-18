@@ -230,13 +230,12 @@
     });
 
 $(window).scroll(function(){
-   // let line2Top = $('.line2').offset().top;
-   // if (scrollTopValue > line2Top){
-    $('.menu-image').fadeIn(3000,function(){
-       $('.menu-item ').fadeIn(1000);
-   });
-  
-  });
+    var homeHeight = $('.line2').outerHeight();
+   var scroll = $(this).scrollTop();
+     if (scroll > homeHeight) {
+        $('.menu-item').fadeIn(3000);
+     }
+ });   
 /*//*----------slide------------------*/
   $(function () {
     $('#nav_btn .next').click(function(){
