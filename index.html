@@ -233,7 +233,9 @@ $(window).scroll(function(){
     var homeHeight = $('.line2').outerHeight();
    var scroll = $(this).scrollTop();
      if (scroll > homeHeight) {
+       $('.menu-image').fadeIn(3000, function () {
         $('.menu-item').fadeIn(3000);
+       });
      }
  });   
 /*//*----------slide------------------*/
